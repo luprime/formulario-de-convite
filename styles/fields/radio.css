@@ -1,0 +1,48 @@
+.radio-wrapper {
+    margin-top: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+    gap: .25rem;
+    padding: .25rem;
+    background-color: var(--input-base);
+    border-radius: .5rem;
+    border: 1px solid var(--input-stroke);
+
+    & input {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.radio-wrapper{
+    border: .25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    height: 2.5rem;
+    padding: 0.25rem;
+
+    position: relative;
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+}
+
+& .radio-inner:hover,
+& .radio-inner:focus-within {
+    background-color: var(--shape-button);
+    border: 1px solid var(--shape-button);
+        svg path {
+            fill: var(--brand-light);
+        }
+}

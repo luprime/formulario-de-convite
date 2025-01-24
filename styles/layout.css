@@ -1,6 +1,6 @@
 #app {
     display: grid;
-    grid-template-columns: 32% 68%;
+    grid-template-columns: 1fr 2fr;
     
 
     height: 100vh;
@@ -8,6 +8,54 @@
 }
 
 aside {
+    margin: 1.25rem 0.625rem 1.25rem 1.25rem;
     background-image: url(../assets/Background.png);
-    
+    background-repeat: no-repeat;
+    /* faz ficar dentro da área estipulada */
+    background-size: cover;
+    /* centraliza a imagem de fundo*/
+    background-position: center;
+
+    & .aside-container {
+        max-width: 25rem;
+        padding: 2rem;
+    }
+
+    & img {
+        height: 3rem;
+    }
+
+    & h1 {
+        font: var(--text-logo);
+        color: var(--color-pink);
+        padding-top: .5rem;
+        padding-bottom: 0.25rem;
+    }
+
+    & p {
+       font: var(--body-sm); 
+       color: var(--text-heading); 
+    }
+
+}
+
+main {
+    overflow: auto;
+    margin: 1.25rem 1.25rem 1.25rem 0.625rem;
+    background-color: var(--shape-body);
+
+    border-radius: 0.75rem;
+
+    & .main-container {
+        max-width: 35rem;
+        align-items: center;
+        margin: 5rem 8.125rem;
+    }
+
+    & .title-h2 {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
 }

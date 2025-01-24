@@ -57,3 +57,22 @@
     --text-body: #C8CDD0;
     --text-heading: #F9F9F9;
 }
+
+body {
+    overflow: hidden;
+    background-color: var(--shape-background);
+
+    font: var(--heading-md);
+    color: var(--text-heading);
+}
+
+h2 {
+    font: var(--body-md);
+}
+
+img
+ {
+    max-width: 100%;
+    height: auto;
+ }
+
