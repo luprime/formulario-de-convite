@@ -1,0 +1,23 @@
+.button {
+    margin-top: 3rem;
+    display: grid;
+    justify-content: end;
+}
+
+.button button {
+    display: flex;
+    gap: .75rem;
+    height: 3rem;
+    padding: 0 1.25rem;
+    background-color: var(--brand-dark);
+    border-radius: .25rem;
+    font: var(--body-md);
+    color: var(--heading-md);
+    border: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button label {
+    cursor: pointer;
+}

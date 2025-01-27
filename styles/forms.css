@@ -12,6 +12,6 @@ fieldset {
 }
 
 legend {
-    font: var(--body-sm);
+    font: var(--heading-sm);
     color: var(--text-heading);
 }

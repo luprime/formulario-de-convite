@@ -10,6 +10,7 @@
 aside {
     margin: 1.25rem 0.625rem 1.25rem 1.25rem;
     background-image: url(../assets/Background.png);
+    border-radius: 0.75rem;
     background-repeat: no-repeat;
     /* faz ficar dentro da área estipulada */
     background-size: cover;

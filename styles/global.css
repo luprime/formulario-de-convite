@@ -12,14 +12,14 @@
     --font-open: 'Open Sans', sans-serif;
 
     /* especificidades fontes */
-    --text-logo: 400 2.5rem/1.5 var(--font-leckerli);
+    --text-logo: 400 2.5rem var(--font-leckerli);
 
-    --heading-md: 700 1.75rem/1.5 var(--font-baloo);
-    --heading-sm: 700 1.125rem/1.5 var(--font-baloo);
+    --heading-md: 700 1.75rem var(--font-baloo);
+    --heading-sm: 700 1.125rem var(--font-baloo);
 
-    --body-md: 400 1rem/1.5 var(--font-open);
-    --body-sm: 400 0.875rem/1.5 var(--font-open);
-    --body-xs: 400 0.75rem/1.5 var(--font-open);
+    --body-md: 400 1rem var(--font-open);
+    --body-sm: 400 0.875rem var(--font-open);
+    --body-xs: 400 0.75rem var(--font-open);
 
 
     /* cores */
@@ -62,12 +62,12 @@ body {
     overflow: hidden;
     background-color: var(--shape-background);
 
-    font: var(--heading-md);
+    font: var(--body-md);
     color: var(--text-heading);
 }
 
 h2 {
-    font: var(--body-md);
+    font: var(--heading-md);
 }
 
 img
