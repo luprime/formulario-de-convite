@@ -1,3 +1,4 @@
+/* esta etapa permite que todos os campos tenham um tamanho exato e fixado e cor*/
 input, textarea, select {
     margin-top: 0.75rem;
     appearance: none;
@@ -13,7 +14,7 @@ input, textarea, select {
     font: var(--body-md);
     color: var(--input-placeholder);
 }
-
+ /* para os campos obrigatórios que precisam de informações especificas, caso preenchidos errado ficam vermelho */
 input {
     &:invalid {
         border: 0.0625rem solid var(--color-feedback);
@@ -31,12 +32,13 @@ textarea {
     margin-bottom: 3rem;
 }
 
+/* quando o clicar tanto no input quanto no text area mudara de cor mostrando foco */
 input:focus,
 textarea:focus {
     outline: 0.125rem solid var(--brand-light);
     outline-offset: .1px;
 }
-
+ /* ao passar o mouse em cima de algum campo ele alterar a cor, hover */
 textarea:hover,
 input:hover,
 input:active,
@@ -46,6 +48,7 @@ input:focus {
     color: var(--text-heading);
 }
 
+/* tirar o icone padrao do input de data q fica a direita do campo */
 input[type="datetime-local"] {
     position: relative;
     &::-webkit-calendar-picker-indicator {
@@ -58,6 +61,7 @@ input[type="datetime-local"] {
     }
 }
 
+/* deixar do mesmo tamanho e lado a lado o flex-wrapper, ou seja,  deixar os inputs do primeiro fieldset com um do lado do outro, como "tipo" e "local" */
 .flex-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -67,7 +71,7 @@ input[type="datetime-local"] {
         position: relative;
     }
 }
-
+ /* relacionado ao estilo (escuro e claro) e a foto de capa onde se coloca um arquivo, tirando estilos padroes e colocando o svg que queremos. */
 .theme-options2 {
     display: grid;
     grid-template-columns: 11rem 1fr;
@@ -165,6 +169,7 @@ input[type="datetime-local"] {
     }
 }
 
+/* campo de dados para contato, deixando uma certa distancia e alterando o tamanho da letra de quando da erro em alguma situação */
 .contact {
     margin-top: 3rem;
     margin-bottom: 3rem;

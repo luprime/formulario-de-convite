@@ -1,3 +1,4 @@
+/* estilizando o "tipo" presencial e online, tornando algo parecido com botoes */
 .radio-wrapper {
     margin-top: 0.75rem;
     display: grid;
@@ -16,6 +17,7 @@
     }
 }
 
+/* mudando a aparencia da parte "tipo" deixando do tamanho desejavel e funcionalidade. */
 .radio-inner{
     border: .25rem;
 
@@ -38,6 +40,7 @@
     }
 }
 
+/* hover e focus quando passar mouse e clicar */
 & .radio-inner:hover,
 & .radio-inner:focus-within {
     background-color: var(--shape-button);
@@ -47,6 +50,7 @@
         }
 }
 
+/* estilizando as cores, deixando as bolas uma do lado da outra, com hover, cores e contorno */
 fieldset.custom {
     & .radio-color {
         font: var(--body-sm);
@@ -122,6 +126,7 @@ fieldset.custom {
 
 }
 
+/* estilizando os tema do evento, deixando as fotos dentro dos cards, com hover, uma do lado da outra. */
 & .theme-wrapper {
     font: var(--body-sm);
     color: var(--text-body);

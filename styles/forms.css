@@ -1,9 +1,11 @@
 @import url(fields/index.css);
 
+/* distancia entre o titulo "crie seu convite" para o forms "sobre o evento" */
 form {
     margin-top: 2.5rem;
 }
 
+/* tirar bordas e configuraçoes padroes do fieldset */
 fieldset {
     border: none;
 

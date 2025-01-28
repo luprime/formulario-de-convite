@@ -1,3 +1,4 @@
+/* zera todas as margens e bordas padroes do html */
 * {
     margin: 0;
     padding: 0;
@@ -59,9 +60,11 @@
 }
 
 body {
+    /* colocar a cor no fundo atras dos "cards" */
     overflow: hidden;
     background-color: var(--shape-background);
 
+    /* fonte e cor da fonte dos titulos do body */
     font: var(--body-md);
     color: var(--text-heading);
 }
@@ -70,6 +73,7 @@ h2 {
     font: var(--heading-md);
 }
 
+/* tanho da imagem do icone de festa */
 img
  {
     max-width: 100%;
